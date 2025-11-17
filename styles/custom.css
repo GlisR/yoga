@@ -1,0 +1,52 @@
+/* ===================================
+   Custom Styles for Yoga Website
+   Warm, light, and gentle color palette
+   =================================== */
+
+/* Color Palette:
+   - Main background: #FFF8F0 (warm cream)
+   - Secondary background: #FFE4D6 (peach)
+   - Accent color: #D4A574 (golden beige)
+   - Text color: #5D4E37 (warm brown)
+   - Link color: #B8956A (light brown)
+*/
+
+/* Body styles - warm cream background with brown text */
+body {
+    background-color: #FFF8F0;
+    color: #5D4E37;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Theme color - golden beige accent */
+.w3-theme {
+    background-color: #D4A574 !important;
+    color: white !important;
+}
+
+/* Light theme variant - peach background */
+.w3-theme-light {
+    background-color: #FFE4D6 !important;
+    color: #5D4E37 !important;
+}
+
+/* Link styles - light brown color */
+a {
+    color: #B8956A;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D4A574;
+    text-decoration: underline;
+}
+
+/* Navigation bar styling */
+.w3-bar {
+    background-color: #FFE4D6 !important;
+}
+
+.w3-bar a:hover {
+    background-color: #D4A574 !important;
+    color: white !important;
+}
