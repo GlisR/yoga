@@ -3,50 +3,56 @@
    Warm, light, and gentle color palette
    =================================== */
 
-/* Color Palette:
-   - Main background: #FFF8F0 (warm cream)
-   - Secondary background: #FFE4D6 (peach)
-   - Accent color: #D4A574 (golden beige)
-   - Text color: #5D4E37 (warm brown)
-   - Link color: #B8956A (light brown)
+/* Color Palette (Enhanced with more vibrant colors):
+   - Main background: #FFF5E6 (warm cream)
+   - Secondary background: #FFD4B8 (vibrant peach)
+   - Accent color: #C89968 (rich golden beige)
+   - Text color: #4A3C2A (deep warm brown)
+   - Link color: #A67C52 (medium brown)
 */
 
 /* Body styles - warm cream background with brown text */
 body {
-    background-color: #FFF8F0;
-    color: #5D4E37;
+    background-color: #FFF5E6;
+    color: #4A3C2A;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Theme color - golden beige accent */
+/* Theme color - rich golden beige accent */
 .w3-theme {
-    background-color: #D4A574 !important;
+    background-color: #C89968 !important;
     color: white !important;
 }
 
-/* Light theme variant - peach background */
-.w3-theme-light {
-    background-color: #FFE4D6 !important;
-    color: #5D4E37 !important;
+/* Dark theme variant for active navigation */
+.w3-theme-dark {
+    background-color: #A67C52 !important;
+    color: white !important;
 }
 
-/* Link styles - light brown color */
+/* Light theme variant - vibrant peach background */
+.w3-theme-light {
+    background-color: #FFD4B8 !important;
+    color: #4A3C2A !important;
+}
+
+/* Link styles - medium brown color */
 a {
-    color: #B8956A;
+    color: #A67C52;
     text-decoration: none;
 }
 
 a:hover {
-    color: #D4A574;
+    color: #C89968;
     text-decoration: underline;
 }
 
 /* Navigation bar styling */
 .w3-bar {
-    background-color: #FFE4D6 !important;
+    background-color: #FFD4B8 !important;
 }
 
 .w3-bar a:hover {
-    background-color: #D4A574 !important;
+    background-color: #C89968 !important;
     color: white !important;
 }
