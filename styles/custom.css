@@ -52,7 +52,180 @@ a:hover {
     background-color: #FFD4B8 !important;
 }
 
+.w3-bar a {
+    font-size: 18px !important;
+    padding: 12px 20px !important;
+}
+
 .w3-bar a:hover {
     background-color: #C89968 !important;
     color: white !important;
+}
+
+/* ===================================
+   Image Gallery Styles
+   Uniform sizing for all gallery images
+   =================================== */
+
+/* Gallery images - uniform height and width */
+.w3-third img.w3-image,
+.w3-half img.w3-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Book card images - show full cover without cropping */
+.w3-card-4 img.w3-image {
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #fff;
+}
+
+/* About section image - maintain aspect ratio */
+section .w3-half img.w3-image {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ===================================
+   Responsive Video Styles
+   Adaptive video container for all devices
+   =================================== */
+
+/* Video container wrapper */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+/* Responsive iframe styling */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Alternative: Direct iframe responsive styling */
+.w3-center iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    .w3-center iframe {
+        height: 250px;
+    }
+}
+
+/* Tablet optimization */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .w3-center iframe {
+        height: 400px;
+    }
+}
+
+/* Desktop optimization */
+@media (min-width: 1025px) {
+    .w3-center iframe {
+        height: 450px;
+    }
+}
+
+/* ===================================
+   About Me Section Styles
+   Align text content with image height
+   =================================== */
+
+/* Reduce padding for About Me section */
+section.w3-container.w3-padding-32:first-of-type {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+/* About Me section - align content vertically */
+.w3-row-padding .w3-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Reduce heading size and margin */
+.w3-row-padding .w3-half h3 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+/* Smaller text size to match image */
+.w3-row-padding .w3-half p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+/* Reduce About Me title margin */
+section .w3-content h2.w3-center {
+    margin-bottom: 16px;
+}
+
+/* ===================================
+   Book Title Links Styles
+   =================================== */
+
+/* Book card title links */
+.w3-card-4 h3 a {
+    color: #4A3C2A;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.w3-card-4 h3 a:hover {
+    color: #C89968;
+    text-decoration: underline;
+}
+
+/* ===================================
+   Book Cards Alignment
+   =================================== */
+
+/* Ensure all book cards have equal height */
+.w3-third.w3-margin-bottom {
+    display: flex;
+}
+
+.w3-third .w3-card-4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Book card title centered and consistent height */
+.w3-card-4 .w3-container.w3-padding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80px;
+}
+
+.w3-card-4 .w3-container h3 {
+    margin: 0;
 }
